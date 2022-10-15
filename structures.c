@@ -19,7 +19,7 @@ double dist(point point1, point point2) {
     return sqrt((point1.x - point2.x) * (point1.x - point2.x) + (point1.y - point2.y) * (point1.y - point2.y));
 }
 
-point szf(point point1, point point2) {
+point lineSegmentHalfPoint(point point1, point point2) {
     point point3 = {0.5 * (point1.x + point2.x), 0.5 * (point2.y + point1.y)};
     return point3;
 }
